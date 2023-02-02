@@ -1,0 +1,46 @@
+:root {
+    --acg-green: #89bdb3;
+    --acg-green-dark: #1e4d43;
+
+    --bs-body-bg: #f8f6ed;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+.accordion {
+    --bs-accordion-color: #fcfaf9;
+    --bs-accordion-bg: var(--acg-green);
+
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231e4d43'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fcfaf9'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+    max-width: 500px;
+}
+
+.accordion-item,
+.accordion-item:not(:first-of-type) {
+    margin: 30px 0;
+    box-shadow: 12px 12px var(--acg-green-dark);
+    border: 1px solid var(--acg-green-dark);
+
+    border-radius: var(--bs-accordion-border-radius);
+}
+
+.accordion-item:first-child {
+    margin-top: 0;
+}
+
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: inherit;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+.accordion-body {
+    padding-top: 0;
+}
